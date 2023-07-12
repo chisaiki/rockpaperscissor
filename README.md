@@ -10,15 +10,14 @@ How to upload a project to GitHub from scratch ---- Follow these steps to upload
 
 2. git add .
 
-3. git commit -m "Add all my files"
+3. git commit -m "Whatever comment you want"
 
 4. git remote add origin https://github.com/yourusername/your-repo-name.git
+      NOTE: Upload of project from scratch require git pull origin master.
 
-5. Upload of project from scratch require git pull origin master.
+5. git pull origin branch_name
 
-6. git pull origin branch_name
-
-7. git push origin branch_name
+6. git push origin branch_name
 
 NEXT STEPS: Figure out why this works
 
