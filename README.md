@@ -1,6 +1,6 @@
 # rockpaperscissor
 
-Update: 07/12/2023
+*Update: 07/12/2023*
 
 I was able to successfully upload to Github using:
 
@@ -9,19 +9,21 @@ How to upload a project to GitHub from scratch ---- Follow these steps to upload
 1. git init
 
 2. git add .
+   Note: You need to tell Git about your files by adding them to your repository. Do this with "git add file_name" --- If you want to add all your files, you can do "git add ."
 
-3. git commit -m "Whatever comment you want"
+4. git commit -m "Whatever comment you want"
 
-4. git remote add origin https://github.com/yourusername/your-repo-name.git
+5. git remote add origin https://github.com/yourusername/your-repo-name.git
       NOTE: Upload of project from scratch require git pull origin master.
 
-5. git pull origin branch_name
+6. git pull origin branch_name
 
-6. git push origin branch_name
+7. git push origin branch_name
 
+Solution Found in (https://stackoverflow.com/questions/12799719/how-to-upload-a-project-to-github)
 NEXT STEPS: Figure out why this works
 
-I ran into a few errors 
+**I ran into a few errors**
 
 1. error: remote origin already exists. 
 
