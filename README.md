@@ -44,6 +44,7 @@ I used the command "git pull origin branchname --allow-unrelated-histories" to f
 Found solution here (https://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories-on-rebase)
 
 NEXT STEPS: Figure out why this flag was placed there. What does common base mean?
-      Found in GitHub settings: The default branch is considered the “base” branch in your repository, against which all pull requests and code commits are automatically made, unless you specify a different branch.
+
+Found in GitHub settings: The default branch is considered the “base” branch in your repository, against which all pull requests and code commits are automatically made, unless you specify a different branch.
 
 ---------------------------------------------------------------------------------------------------------------
