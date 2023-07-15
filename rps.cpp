@@ -10,6 +10,8 @@
     int player_input;
     int ai_input;
     int rounds {0}; //keeps track of rounds
+    int ai_score{0};
+    int player_score{0};
 
 int main(){
 
@@ -41,25 +43,39 @@ while (rounds > 0)
     //checks for draws
     
     else if(ai_input == 1 && player_input == 2)
-        std::cout << "Player wins" << std::endl;
+        {std::cout << "Player wins" << std::endl;
+        player_score++;}
+
     else if (ai_input == 1 && player_input == 3)
-        std::cout << "Ai wins" << std::endl;
+        {std::cout << "Ai wins" << std::endl;
+        ai_score++;}
 
     else if(ai_input == 2 && player_input == 1)
-        std::cout << "AI wins" << std::endl;
+        {std::cout << "AI wins" << std::endl;
+        ai_score++;}
+
     else if (ai_input == 3 && player_input == 1)
-        std::cout << "Player wins" << std::endl;
+        {std::cout << "Player wins" << std::endl;
+        player_score++;}
     //checks for rock v paper and rock v scissor
 
 
     else if (ai_input == 2 && player_input == 3)
-    std::cout << "Player wins" << std::endl;
+    {std::cout << "Player wins" << std::endl;
+    player_score++;}
+
     else if (ai_input == 3 && player_input == 2)
-    std::cout << "Ai wins" << std::endl;
+    {std::cout << "Ai wins" << std::endl;
+    ai_score++;}
     //checks scissor v paper
 
     rounds--; //increment round
 }
+
+if(ai_score < player_score)
+    std::cout << "Player is the winner!" << std::endl;
+else 
+    std::cout << "AI is the winner!" << std::endl;
 
 std::cout << "Thanks for playing" << std::endl;
 
