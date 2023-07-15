@@ -82,7 +82,7 @@ std::cout << "Thanks for playing" << std::endl;
 
 //fatal: invalid gitfile format: rps.cpp   fatal: Could not read from remote repository.
 //I was able to upload changes to github, see notes on how
-//Next steps: Making it out of 3 rounds ------ Next Next Steps: Keep score of the 3 rounds
+//Next steps: Make them into functions
 
     return 0;
 }
