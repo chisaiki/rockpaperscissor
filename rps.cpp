@@ -1,9 +1,10 @@
 //to run always hit run -> start debugging
 #include <iostream>
+#include <cstdlib> //should have the rand function in it
 #include <string>
 
 //I dont want to use namespace to practice using std::
-    //what is "::"
+    //what is "::" --- scope resolution operator
 
     int player_input;
     int ai_input;
@@ -50,7 +51,8 @@ int main(){
     std::cout << "Ai wins" << std::endl;
     //checks scissor v paper
 
-//Next steps, figure out how to upload it to github
+//Next steps, figure out how to upload it to GITHUB; i did it but need to pratice pushing getting an error
+//fatal: invalid gitfile format: rps.cpp   fatal: Could not read from remote repository.
 
     return 0;
 }
