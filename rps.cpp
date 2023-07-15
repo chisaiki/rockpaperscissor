@@ -9,9 +9,12 @@
 
     int player_input;
     int ai_input;
-    int rounds = 3; //keeps track of rounds
+    int rounds {0}; //keeps track of rounds
 
 int main(){
+
+std::cout << "Pick how many rounds you want to play: ";
+std::cin >> rounds;
 
 while (rounds > 0)
 {
