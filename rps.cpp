@@ -2,7 +2,7 @@
 #include <iostream>
 #include <cstdlib> //should have the rand function in it
 #include <string>
-#include <ctime>
+#include <ctime> //Need it for the seed for rand()
 
 //I dont want to use namespace to practice using std::
     //what is "::" --- scope resolution operator
