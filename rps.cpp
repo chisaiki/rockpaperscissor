@@ -53,6 +53,7 @@ int main(){
 
 //Next steps, figure out how to upload it to GITHUB; i did it but need to pratice pushing getting an error
 //fatal: invalid gitfile format: rps.cpp   fatal: Could not read from remote repository.
+//I was able to upload changes to github, see notes on how
 
     return 0;
 }
