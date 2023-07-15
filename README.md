@@ -37,6 +37,30 @@ Found solution here (https://www.cloudbees.com/blog/remote-origin-already-exists
 
 NEXT STEPS: Figure out what remote means in this case. 
 
+7/15/2023
+
+PUSHING UPDATES/CHANGES:
+
+1. git add "file_name"
+2. git commit -m "whatever comment i want to say"
+3. git push whichever_branch_I_want (example: git push origin main == main branch) 
+
+SOURCE (https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github)
+
+----------------------------------
+I ran into a few errors 
+
+1. error: remote origin already exists. 
+
+This happened because Git has remote repos, we use names to identify them. In this case its called origin. I use "git remote" to check if it exists and "git remote -v" to check all remotes that exist for current repo. 
+
+I basically remove the one that already exists using "git remote remove origin" to get rid of it, and just created a new one using "git remote add origin https://github.com/username/reponame.git" 
+in this case 
+"git remote add origin https://github.com/chisaiki/rockpaperscissor.git"
+
+Found solution here (https://www.cloudbees.com/blog/remote-origin-already-exists-error)
+
+NEXT STEPS: Figure out what remote means in this case. 
 
 2. fatal: refusing to merge unrelated histories
 
