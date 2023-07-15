@@ -2,6 +2,7 @@
 #include <iostream>
 #include <cstdlib> //should have the rand function in it
 #include <string>
+#include <ctime>
 
 //I dont want to use namespace to practice using std::
     //what is "::" --- scope resolution operator
@@ -17,11 +18,11 @@ int main(){
         //this is saying I want to use "cin, cout, endl" from the library called standard
 
 //get ai input
+    
+    srand(time(0));
     ai_input = std::rand() % 3 + 1; 
-    //should pick a number between 1 and 3 but it just seems to pick only 3
-    //Maybe i need to add a "seed?" to make it more random
-    //I remember rand() doesnt work that well because it picks randomly once and thats it
-    //Next steps: Read about seeds
+    //should pick a number between 1 and 3 
+    //successfully added the seed, I used the current time as the seed, check notes on how it works
     std::cout << ai_input << std::endl;
 
 //compare result and find winner
