@@ -9,10 +9,13 @@
 
     int player_input;
     int ai_input;
+    int rounds = 3; //keeps track of rounds
 
 int main(){
 
-//get player input
+while (rounds > 0)
+{
+    //get player input
     std::cout << "Enter 1: Rock, 2: Paper, 3: Scissor" << std::endl;
     std::cin >> player_input;
         //this is saying I want to use "cin, cout, endl" from the library called standard
@@ -52,9 +55,15 @@ int main(){
     std::cout << "Ai wins" << std::endl;
     //checks scissor v paper
 
-//Next steps, figure out how to upload it to GITHUB; i did it but need to pratice pushing getting an error
+    rounds--; //increment round
+}
+
+std::cout << "Thanks for playing" << std::endl;
+
+
 //fatal: invalid gitfile format: rps.cpp   fatal: Could not read from remote repository.
 //I was able to upload changes to github, see notes on how
+//Next steps: Making it out of 3 rounds ------ Next Next Steps: Keep score of the 3 rounds
 
     return 0;
 }
