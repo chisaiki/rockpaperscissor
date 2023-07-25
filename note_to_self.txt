@@ -21,3 +21,10 @@ I'm thinking maybe I should try a for loop
 
 The for loop worked! It solved the decrement issue because I was able to set i to the value of 
 getRounds!
+
+----------
+Terminal command note: You dont have to add quotes around the files you want to add
+(Ex. I was doing -> git add 'rps.cpp' but this isn't necessary I can do git add rps.cpp)
+
+Because I was doing it this way I was unable to add multiple files without it leading to an error
+----------
