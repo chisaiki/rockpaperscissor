@@ -1,3 +1,0 @@
-﻿  Source.cpp
-C:\Users\mishi\source\repos\Test\Source.cpp(11,5): error C2065: 'cut': undeclared identifier
-C:\Users\mishi\source\repos\Test\Source.cpp(14,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
