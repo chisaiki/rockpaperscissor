@@ -1,0 +1,20 @@
+Notes: 
+
+I tried to add the getRounds function into the while loop ex. while (getRounds > 0)
+I didnt get any errors but I was having trouble decrementing the value in rounds because it wasn't
+within the scope of the while loop itself
+
+Current code:
+
+int rounds = getRounds();
+
+while (rounds > 0)
+{
+    //code does stuff
+
+  rounds--; //increment round
+}
+
+The issue here is that I'm trying to update the value of rounds inside the loop but rounds
+exists outside of it, I can't seem to update something outside of a loop from within.
+I'm thinking maybe I should try a for loop
