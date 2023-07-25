@@ -18,3 +18,6 @@ while (rounds > 0)
 The issue here is that I'm trying to update the value of rounds inside the loop but rounds
 exists outside of it, I can't seem to update something outside of a loop from within.
 I'm thinking maybe I should try a for loop
+
+The for loop worked! It solved the decrement issue because I was able to set i to the value of 
+getRounds!

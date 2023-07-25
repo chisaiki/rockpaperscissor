@@ -7,9 +7,17 @@
 //I dont want to use namespace to practice using std::
     //what is "::" --- scope resolution operator
 
-    int rounds {0}; //keeps track of rounds
     int ai_score{0};
     int player_score{0};
+
+    int getRounds()
+    {
+        int rounds {0}; //keeps track of rounds
+        std::cout << "Pick how many rounds you want to play: ";
+        std::cin >> rounds;
+
+        return rounds;
+    }
 
     int getPlayerInput() //given error: Cannot overload functions distinguished by return type alone
     //the compiler is not able to distinguish which function you want to invoke at a call point since same name
@@ -25,8 +33,7 @@
     int getAIInput()
     {
         int ai_input{0};
-        //get ai input
-    
+    //get ai input
     srand(time(0));
     ai_input = std::rand() % 3 + 1; 
     //should pick a number between 1 and 3 
@@ -39,10 +46,7 @@
 
 int main(){
 
-std::cout << "Pick how many rounds you want to play: ";
-std::cin >> rounds;
-
-while (rounds > 0)
+for (int i = getRounds(); i > 0; i--)
 {
 
 int player_input = getPlayerInput(); //I'm storing players input into a variable within main
@@ -83,8 +87,6 @@ int ai_input = getAIInput();
     {std::cout << "Ai wins" << std::endl;
     ai_score++;}
     //checks scissor v paper
-
-    rounds--; //increment round
 }
 
 if(ai_score < player_score)
