@@ -41,18 +41,13 @@
     std::cout << ai_input << std::endl;
 
     return ai_input;
-
     }
 
-int main(){
+    int compareResults(int player_input, int ai_input){
+        //int player_input = player;
+        //int ai_input = ai; //something is wrong with the way I'm trying to make parameter values equivalent to local
 
-for (int i = getRounds(); i > 0; i--)
-{
-
-int player_input = getPlayerInput(); //I'm storing players input into a variable within main
-int ai_input = getAIInput();
-
-    //compare result and find winner
+        //compare result and find winner
     if(ai_input == 1 && player_input == 1)
         std::cout << "Draw" << std::endl;
     else if (ai_input == 2 && player_input == 2)
@@ -87,6 +82,17 @@ int ai_input = getAIInput();
     {std::cout << "Ai wins" << std::endl;
     ai_score++;}
     //checks scissor v paper
+
+    }
+
+int main(){
+
+for (int i = getRounds(); i > 0; i--)
+{
+int player_input = getPlayerInput(); //I'm storing players input into a variable within main
+int ai_input = getAIInput();
+compareResults(player_input, ai_input);
+    
 }
 
 if(ai_score < player_score)

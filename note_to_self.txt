@@ -28,3 +28,10 @@ Terminal command note: You dont have to add quotes around the files you want to 
 
 Because I was doing it this way I was unable to add multiple files without it leading to an error
 ----------
+
+Question I Had: When do I need to add an argument to a function?
+
+It seems like I need to add it when I need to give the function a specific value I need it
+to interact with.
+
+Issue: ai_score and player_score are out of scope so they can't be updated within compareResults()
