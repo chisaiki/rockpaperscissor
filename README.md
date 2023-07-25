@@ -75,7 +75,7 @@ Found in GitHub settings: The default branch is considered the “base” branch
 
 ---------------------------------------------------------------------------------------------------------------
 
-7/25
+*Update: 7/25*
 
 Learned how to delete folders and update the deletion onto Github
 
