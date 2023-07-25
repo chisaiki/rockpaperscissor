@@ -7,13 +7,11 @@
 //I dont want to use namespace to practice using std::
     //what is "::" --- scope resolution operator
 
-    //int player_input;
-    int ai_input;
     int rounds {0}; //keeps track of rounds
     int ai_score{0};
     int player_score{0};
 
-    int getInput() //given error: Cannot overload functions distinguished by return type alone
+    int getPlayerInput() //given error: Cannot overload functions distinguished by return type alone
     //the compiler is not able to distinguish which function you want to invoke at a call point since same name
     {
     int player_input{0};
@@ -24,6 +22,21 @@
     return player_input;
     }
 
+    int getAIInput()
+    {
+        int ai_input{0};
+        //get ai input
+    
+    srand(time(0));
+    ai_input = std::rand() % 3 + 1; 
+    //should pick a number between 1 and 3 
+    //successfully added the seed, I used the current time as the seed, check notes on how it works
+    std::cout << ai_input << std::endl;
+
+    return ai_input;
+
+    }
+
 int main(){
 
 std::cout << "Pick how many rounds you want to play: ";
@@ -32,15 +45,8 @@ std::cin >> rounds;
 while (rounds > 0)
 {
 
-int player_input = getInput(); //I'm storing players input into a variable within main
-   
-//get ai input
-    
-    srand(time(0));
-    ai_input = std::rand() % 3 + 1; 
-    //should pick a number between 1 and 3 
-    //successfully added the seed, I used the current time as the seed, check notes on how it works
-    std::cout << ai_input << std::endl;
+int player_input = getPlayerInput(); //I'm storing players input into a variable within main
+int ai_input = getAIInput();
 
     //compare result and find winner
     if(ai_input == 1 && player_input == 1)
