@@ -43,6 +43,15 @@
     return ai_input;
     }
 
+    int addPlayerScore(){
+    //how do i make this function retain updated data
+        return player_score++;
+    }
+
+    int addAiScore(){
+        return ai_score++;
+    }
+
     int compareResults(int player_input, int ai_input){
         //int player_input = player;
         //int ai_input = ai; //something is wrong with the way I'm trying to make parameter values equivalent to local
@@ -58,7 +67,7 @@
     
     else if(ai_input == 1 && player_input == 2)
         {std::cout << "Player wins" << std::endl;
-        player_score++;}
+        addPlayerScore();}
 
     else if (ai_input == 1 && player_input == 3)
         {std::cout << "Ai wins" << std::endl;
