@@ -74,3 +74,12 @@ NEXT STEPS: Figure out why this flag was placed there. What does common base mea
 Found in GitHub settings: The default branch is considered the “base” branch in your repository, against which all pull requests and code commits are automatically made, unless you specify a different branch.
 
 ---------------------------------------------------------------------------------------------------------------
+
+7/25
+
+Learned how to delete folders and update the deletion onto Github
+
+1. git rm -r <folder_name>
+2. git status
+3. git commit -m "deleted folder_name"
+4. git push origin <branch>
