@@ -1,0 +1,41 @@
+Notes: 
+
+I tried to add the getRounds function into the while loop ex. while (getRounds > 0)
+I didnt get any errors but I was having trouble decrementing the value in rounds because it wasn't
+within the scope of the while loop itself
+
+Current code:
+
+int rounds = getRounds();
+
+while (rounds > 0)
+{
+    //code does stuff
+
+  rounds--; //increment round
+}
+
+The issue here is that I'm trying to update the value of rounds inside the loop but rounds
+exists outside of it, I can't seem to update something outside of a loop from within.
+I'm thinking maybe I should try a for loop
+
+The for loop worked! It solved the decrement issue because I was able to set i to the value of 
+getRounds!
+
+----------
+Terminal command note: You dont have to add quotes around the files you want to add
+(Ex. I was doing -> git add 'rps.cpp' but this isn't necessary I can do git add rps.cpp)
+
+Because I was doing it this way I was unable to add multiple files without it leading to an error
+----------
+
+Question I Had: When do I need to add an argument to a function?
+
+It seems like I need to add it when I need to give the function a specific value I need it
+to interact with.
+
+Issue: ai_score and player_score are out of scope so they can't be updated within compareResults()
+    Possible solution: 
+    https://marketsplash.com/tutorials/cpp/static-cplusplus/#:~:text=Applying%20static%20to%20local%20variables,their%20value%20between%20function%20calls.
+
+    Have to look into pointers to figure out a way to update the value even after function instance is gone
