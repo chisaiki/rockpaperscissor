@@ -43,66 +43,21 @@
     return ai_input;
     }
 
-    //---------------------------------------------------------------------------
+    //how do i make this function retain updated data = static variables?
 
-    int addPlayerScore(){
-    //how do i make this function retain updated data
-        return player_score++;
+    void keepPlayerScore(){
+
+        static int n = 0;
+        n++;
     }
 
-    int addAiScore(int n){
-
-        if(n == 1)
-        {
-            //score++;
-
-        }
-        return ai_score++;
-    }
-
-    int compareResults(int player_input, int ai_input){
-        //int player_input = player;
-        //int ai_input = ai; //something is wrong with the way I'm trying to make parameter values equivalent to local
-
-        //compare result and find winner
-    if(ai_input == 1 && player_input == 1)
-        std::cout << "Draw" << std::endl;
-    else if (ai_input == 2 && player_input == 2)
-        std::cout << "Draw" << std::endl;
-    else if (ai_input == 3 && player_input == 3)
-        std::cout << "Draw" << std::endl;
-    //checks for draws
     
-    else if(ai_input == 1 && player_input == 2)
-        {std::cout << "Player wins" << std::endl;
-        addPlayerScore();}
+    void keepAIScore(){
 
-    else if (ai_input == 1 && player_input == 3)
-        {std::cout << "Ai wins" << std::endl;
-        ai_score++;}
-
-    else if(ai_input == 2 && player_input == 1)
-        {std::cout << "AI wins" << std::endl;
-        ai_score++;}
-
-    else if (ai_input == 3 && player_input == 1)
-        {std::cout << "Player wins" << std::endl;
-        player_score++;}
-    //checks for rock v paper and rock v scissor
-
-
-    else if (ai_input == 2 && player_input == 3)
-    {std::cout << "Player wins" << std::endl;
-    player_score++;}
-
-    else if (ai_input == 3 && player_input == 2)
-    {std::cout << "Ai wins" << std::endl;
-    ai_score++;}
-    //checks scissor v paper
-
+        static int m = 0;
+        m++;
     }
-
-    //----------------------------------------------------------
+ 
 
     void findWinner(int ai_score, int player_score){
         if(ai_score < player_score)
@@ -157,6 +112,14 @@ if(ai_input == 1 && player_input == 1)
 }
 
 findWinner(ai_score,player_score);
+
+keepAIScore();
+keepAIScore();
+keepAIScore();
+keepAIScore();
+keepAIScore();
+//might need pointers to update the value
+std::cout << keepAIScore;
 
 //fatal: invalid gitfile format: rps.cpp   fatal: Could not read from remote repository.
 //I was able to upload changes to github, see notes on how
